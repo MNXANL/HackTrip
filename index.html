@@ -13,15 +13,15 @@
 
 	<body > 
 		<div >
-			<h1 style="font-family:helvetica;">
+			<h1 >
 				HackTrip <!-- CAMBIAR POR LOGO C00L -->
 			</h1>
-			<h2 style="font-family:helvetica;">
+			<h2 >
 				(Powered by Skyscanners!) <!-- CAMBIAR POR LOGO C00L -->
 			</h2>
-			<h3 style="font-family:arial;">
-				Need to go to an MLH-sanctioned Hackathon? Don't want to get lost searching for planes? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
-			</h3>
+			<h3>
+				Need to go to an MLH-sanctioned Hackathon? Need a plane that fits it? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
+			</h3><!-- HEADER -->
 		</div>
 		<div>
 			<form>
@@ -36,12 +36,30 @@
 			</form> 
 			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
 			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
-			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> -->
+			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> --> <!-- CONVENTIONS --> 
 		</div>
-		<div>
+		<div >
+			<h2 style="font-family:helvetica;">
+				Conventions
+			</h2>
+			<h3 style="font-family:arial;">
+				This is the criterion used to decide on prices and such:
+			</h3>
+			<p >
+				<ul>
+					<li style="font-family:helvetica;">If you go to a hackathon at NA, your currency will be displayed in dollars. For EU, it'll be displayed in euros.</li>
+					<li style="font-family:helvetica;">Hackathons begin some time before their opening cerimony, and end after the ending one. 
+					<br>Public transport and potential delays/baggage check-in are taken into consideration when calculating these times.</li>
+					<li style="font-family:helvetica;">Price will be grouped if you choose to come with (1..5] friends.</li>
+					<li style="font-family:helvetica;">The margin for departures is substracted from the beginning time, and the arrival margin is summed to the ending time.</li>
+					<li style="font-family:helvetica;">All trips are calculated on economy class.</li>
+				</ul>
+			</p><!-- INTERACTIVITY (ALIGN!) -->
+		</div>
+		<div> <!-- LIST -->
 			<h2> List of current hackathons (WIP): </h2>
 
-	<!-- NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aero-hack: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subconjunto para que lo vea la gente! -->
+			<!-- NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aero-hack: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subconjunto para que lo vea la gente! -->
 
 			 <table align="center" style="width:70%">
 				<tr>
@@ -62,7 +80,7 @@
 				</tr>
 				<tr>
 					<td>HackRU</td>
-					<td>NA</td>
+					<td>NA 🇺🇸</td>
 					<td>New Brunswick, NJ</td>
 					<td>EWR</td>
 					<td>22/10/2016 - 10:00</td>
@@ -101,6 +119,12 @@
 					<td>10/12/2016 - 17:00</td>
 				</tr>
 			</table> 
+		</div>
+		<div> <!-- TAIL -->
+			<hr>
+			<p>
+				Developed by Aaron Jimenez, Miguel Moreno and Alex Viñas for HackUPC Fall 2016. This website uses Skyscanner's API.
+			</p>
 		</div>
 	</body>
 </html>
