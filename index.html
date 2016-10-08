@@ -14,36 +14,47 @@
 	<body > 
 		<div >
 			<h1 style="font-family:helvetica;">
-				HackTrip (Powered by Skyscanners!)
+				HackTrip <!-- CAMBIAR POR LOGO C00L -->
 			</h1>
+			<h2 style="font-family:helvetica;">
+				(Powered by Skyscanners!) <!-- CAMBIAR POR LOGO C00L -->
+			</h2>
 			<h3 style="font-family:arial;">
 				Need to go to an MLH-sanctioned Hackathon? Don't want to get lost searching for planes? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
 			</h3>
 		</div>
 		<div>
 			<form>
-				Where are you from? <input type="text" name="fromname">
-				Where do you want to go? <input type="text" name="toname"><br>
-				Do you want an extra margin of time (in hours)? <input type="int" name="hourname"><br>
+			<p>
+				Where are you from? <input type="text" class="buttonstr" name="fromname" value="Barcelona" autocomplete="on"><br>
+				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="HackUPC" autocomplete="on"><br>
+				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
+				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
+				How many friends want to go to this hackathon? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="5"><br>
 				<input type="submit" value="Find">
+			</p>
 			</form> 
-			<p>Where are you from? <i>[Cajita de Text Edit]</i></p>
+			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
 			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
-			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p>
+			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> -->
 		</div>
 		<div>
-			<h1> List of current hackathons (WIP): </h1>
-				NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aeropuerto-uni: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subset para que lo vea la pipol!
+			<h2> List of current hackathons (WIP): </h2>
+
+	<!-- NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aero-hack: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subconjunto para que lo vea la gente! -->
+
 			 <table align="center" style="width:70%">
 				<tr>
 					<th>HACKATHON</th>
+					<th>REGION</th>
 					<th>LOCATION</th>
-					<th>AIRPORT CODE</th>
+					<th>AIRPORT CODE</th> <!-- Quitar este campo -->
 					<th>BEGINS</th>
 					<th>ENDS</th>
 				</tr>
 				<tr>
 					<td>HackUPC</td>
+					<td>EU</td>
 					<td>Barcelona, Spain</td>
 					<td>BCN</td>
 					<td>07/10/2016 - 18:00</td>
@@ -51,6 +62,7 @@
 				</tr>
 				<tr>
 					<td>HackRU</td>
+					<td>NA</td>
 					<td>New Brunswick, NJ</td>
 					<td>EWR</td>
 					<td>22/10/2016 - 10:00</td>
@@ -58,17 +70,35 @@
 				</tr>
 				<tr>
 					<td>OxfordHack</td>
+					<td>EU</td>
 					<td>Oxford, UK</td>
-					<td>London (all)</td>
+					<td>London (All)</td>
 					<td>19/11/2016 - 09:00</td>
 					<td>20/11/2016 - 17:00</td>
 				</tr>
 				<tr>
 					<td>Junction</td>
+					<td>EU</td>
 					<td>Helsinki, Finland</td>
 					<td>HEL</td>
 					<td>25/11/2016 - 18:00</td>
 					<td>27/11/2016 - 17:00</td>
+				</tr>
+				<tr>
+					<td>Local Hack Day</td>
+					<td>WW</td>
+					<td>Everywhere</td>
+					<td>---</td>
+					<td>3/12/2016 - 00:00</td>
+					<td>4/12/2016 - 00:00</td>
+				</tr>
+				<tr>
+					<td>Junction</td>
+					<td>EU</td>
+					<td>Bucharest, Romania</td>
+					<td>Bucharest (All)</td>
+					<td>8/12/2016 - 19:00</td>
+					<td>10/12/2016 - 17:00</td>
 				</tr>
 			</table> 
 		</div>
