@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="styles.css">
 		<title>HackTrip | HackUPC Fall 2016</title>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<meta http-equiv="refresh" content="10" >		<meta charset="UTF-8" >
@@ -17,11 +17,7 @@
 				HackTrip <!-- CAMBIAR POR LOGO C00L -->
 			</h1>
 			<hr>
-			<img src="skyscanner.jpg" style="width:200px; height:80px;"> 
-			<h3 >
-				Powered by Skyscanners <!-- CAMBIAR POR LOGO C00L --></h3>
-				
-			<!--</h2>-->
+			<img src="Images/SkyScanner.png" style="width:200px; " background-color="black"> 
 			<h3>
 				Need to go to an MLH-sanctioned Hackathon? Need a plane that fits it? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
 			</h3><!-- HEADER -->
@@ -30,11 +26,16 @@
 			<form id="data">
 			<p>
 				Where are you from? <input type="text" class="buttonstr" name="fromname" value="" autocomplete="on"><br>
+
 				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="" autocomplete="on"><br>
+				
 				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
+				
 				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname2" value="0" min="0" max="10"><br>
-				How many friends want to go to this hackathon? <input class="buttonum" name="friendsnum" value="0" min="0"><br>
+				
+				How many friends want to go to this hackathon? <input class="buttonum" name="friendsnum" value="0" min="1" max="8" type="number" class="buttonum" name="hourname" value="1"><br>
 				<!--<input type="submit" value="Find" >-->
+				
 				<button onclick="showAlert()">Find </button>
 			</p>
 			</form> 
