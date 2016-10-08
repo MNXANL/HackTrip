@@ -6,7 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
-		<meta http-equiv="refresh" content="10" >		<meta charset="UTF-8" >
+		<meta http-equiv="refresh" content="60" >		<meta charset="UTF-8" >
 		<meta name="keywords" content="HackUPC, MLH, Skyscanners, travel, trip" >
 		<meta name="author"   content="Aaron Jimenez, Miguel Moreno, Alex Viñas">
 	</head>
@@ -25,15 +25,36 @@
 		<div>
 			<form id="data">
 			<p>
-				Where are you from? <input type="text" class="buttonstr" name="fromname" value="" autocomplete="on"><br>
+				Where are you from? <!--input type="text" class="buttonstr" name="fromname" value="" autocomplete="on"><br-->
+				<select name="toname" >
+				  <option value=""></option>
+				  <option value="BCN">Barcelona</option>
+				  <option value="PAR">Paris</option>
+				  <option value="GER">Bremen</option>
+				  <option value="LON">London</option>
+				  <option value="NYC">New York City</option>
+  				  <option value="SFR">San Francisco</option>	
+				</select>
+				<br>
 
-				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="" autocomplete="on"><br>
-				
+				Where do you want to go? 
+				<select name="toname">
+				  <option value=""></option>
+				  <option value="BCN">HackUPC</option>
+				  <option value="EWR">HackRU</option>
+				  <option value="LHR">Oxford Hack</option>
+				  <option value="HEL">Junction</option>
+				  <option value="---">Local Hack Day</option>
+  				  <option value="ROI">HackSociety</option>	
+				</select>
+				<br>
 				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
 				
 				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname2" value="0" min="0" max="10"><br>
 				
-				How many people want to go to this hackathon? <input class="buttonum" name="friendsnum" value="1" min="1" max="8" type="number" class="buttonum" name="hourname"><br>
+				How many people want to go to this hackathon? <input class="buttonum" name="friendsnum" value="1" min="1" max="8" type="number" class="buttonum" name="hourname"><br>  
+				 
+
 				<!--<input type="submit" value="Find" >-->
 				
 				<button onclick="showAlert()">Find </button>
