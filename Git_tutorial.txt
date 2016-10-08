@@ -1,4 +1,4 @@
-GIT TUTORIAL
+﻿GIT TUTORIAL
 //////////////////////////
 
 ANTES DE NADA
@@ -15,7 +15,7 @@ COMANDOS
 --------------------------
 Los comandos que vamos a utilizar son: 
 
-git clone https://github.com/Mmorenogomez/UnityProject/ 
+git clone https://github.com/MNXANL/HackTrip/ 
 > (Donde está el link es el repo) Clona (o copia) los archivos del repositorio en una carpeta que creará con el mismo nombre que el repo. Pedirá tu nombre y password si se trata de un repo privado (como es el caso, SÍ)
 
 
