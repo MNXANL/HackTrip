@@ -17,10 +17,9 @@
 				HackTrip <!-- CAMBIAR POR LOGO C00L -->
 			</h1>
 			<hr>
-			<img src="skyscanner.jpg" style="width:200px; height:80px;"> 
-			<h3 >
-				Powered by Skyscanners <!-- CAMBIAR POR LOGO C00L --></h3>
-				
+			<h2 >
+				(Powered by Skyscanners!) <!-- CAMBIAR POR LOGO C00L --></h2>
+				<img src="skyscanner.jpg" style="width:200px; height:80px;"> 
 			<!--</h2>-->
 			<h3>
 				Need to go to an MLH-sanctioned Hackathon? Need a plane that fits it? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
