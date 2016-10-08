@@ -14,7 +14,7 @@
 	<body > 
 		<div >
 			<h1>
-				HackTrip <!-- CAMBIAR POR LOGO C00L --> | <a href="conventions.html"; style="color:cyan;"> Conventions</a> | <a href="hacklist.html"; style="color:cyan;"> List of Hackathons </a>
+				HackTrip <!-- CAMBIAR POR LOGO C00L --> | <a href="conventions.html"; style="color:cian;"> Conventions</a> | <a href="hacklist.html"; style="color:cian;"> List of Hackathons </a>
 				</h1>
 			<hr>
 			<img src="Images/SkyScanner.png" style="width:200px; " background-color="black"> 
