@@ -21,6 +21,10 @@ p {
     padding-left: 50px
 }
 
+li {
+	font-family: helvetica;
+}
+
 th {
 	text-align: center;
 	font-family: monospace;
@@ -37,4 +41,10 @@ tr {
 
 .buttonum {
     width: 35px;
+    type: "number"; 
+    class: "buttonum"; 
+    name: "hourname"; 
+    value: 0;
+    min: 0; 
+    max: 0;
 }

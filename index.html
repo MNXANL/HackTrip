@@ -30,38 +30,37 @@
 				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="HackUPC" autocomplete="on"><br>
 				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
 				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
-				How many friends want to go to this hackathon? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="5"><br>
-				<input type="submit" value="Find">
+				How many friends want to go to this hackathon? <input class="buttonum"><br>
+				<input type="submit" value="Find" >
 			</p>
 			</form> 
 			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
 			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
 			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> --> <!-- CONVENTIONS --> 
 		</div>
-		<div >
+		<nav>
 			<h2 style="font-family:helvetica;">
 				Conventions
 			</h2>
 			<h3 style="font-family:arial;">
 				This is the criterion used to decide on prices and such:
 			</h3>
-			<p >
 				<ul>
-					<li style="font-family:helvetica;">If you go to a hackathon at NA, your currency will be displayed in dollars. For EU, it'll be displayed in euros.</li>
-					<li style="font-family:helvetica;">Hackathons begin some time before their opening cerimony, and end after the ending one. 
+					<li>If you go to a hackathon at NA, your currency will be displayed in dollars. For EU, it'll be displayed in euros.</li>
+					<li>Hackathons begin some time before their opening cerimony, and end after the ending one. 
 					<br>Public transport and potential delays/baggage check-in are taken into consideration when calculating these times.</li>
-					<li style="font-family:helvetica;">Price will be grouped if you choose to come with (1..5] friends.</li>
-					<li style="font-family:helvetica;">The margin for departures is substracted from the beginning time, and the arrival margin is summed to the ending time.</li>
-					<li style="font-family:helvetica;">All trips are calculated on economy class.</li>
+					<li>Price will be grouped if you choose to come with (1..5] friends.</li>
+					<li>The margin for departures is substracted from the beginning time, and the arrival margin is summed to the ending time.</li>
+					<li>All trips are calculated on economy class.</li>
 				</ul>
-			</p><!-- INTERACTIVITY (ALIGN!) -->
-		</div>
+			<!-- INTERACTIVITY (ALIGN!) -->
+		</nav>
 		<div> <!-- LIST -->
 			<h2> List of current hackathons (WIP): </h2>
 
 			<!-- NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aero-hack: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subconjunto para que lo vea la gente! -->
 
-			 <table align="center" style="width:70%">
+			 <table align="center" style="width:80%">
 				<tr>
 					<th>HACKATHON</th>
 					<th>REGION</th>
