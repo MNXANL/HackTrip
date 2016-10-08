@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css">
@@ -24,16 +24,24 @@
 			</h3><!-- HEADER -->
 		</div>
 		<div>
-			<form>
+			<form id="data">
 			<p>
-				Where are you from? <input type="text" class="buttonstr" name="fromname" value="Barcelona" autocomplete="on"><br>
-				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="HackUPC" autocomplete="on"><br>
+				Where are you from? <input type="text" class="buttonstr" name="fromname" value="" autocomplete="on"><br>
+				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="" autocomplete="on"><br>
 				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
-				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
-				How many friends want to go to this hackathon? <input class="buttonum"><br>
-				<input type="submit" value="Find" >
+				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname2" value="0" min="0" max="10"><br>
+				How many friends want to go to this hackathon? <input class="buttonum" name="friendsnum" value="0" min="0"><br>
+				<!--<input type="submit" value="Find" >-->
+				<button onclick="showAlert()">Find </button>
 			</p>
 			</form> 
+			<script>
+				function showAlert() {
+					if (document.forms["data"]["fromname"].value == "" || document.forms["data"]["toname"].value == "") {
+						alert("Please complete the text fields");
+					}
+				}
+			</script>
 			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
 			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
 			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> --> <!-- CONVENTIONS --> 
