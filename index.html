@@ -1,130 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="styles.css">
-		<title>HackTrip | HackUPC Fall 2016</title>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		
-		<meta http-equiv="refresh" content="10" >		<meta charset="UTF-8" >
-		<meta name="keywords" content="HackUPC, MLH, Skyscanners, travel, trip" >
-		<meta name="author"   content="Aaron Jimenez, Miguel Moreno, Alex Viñas">
-	</head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-	<body > 
-		<div >
-			<h1 >
-				HackTrip <!-- CAMBIAR POR LOGO C00L -->
-			</h1>
-			<h2 >
-				(Powered by Skyscanners!) <!-- CAMBIAR POR LOGO C00L -->
-			</h2>
-			<h3>
-				Need to go to an MLH-sanctioned Hackathon? Need a plane that fits it? Just tell us where, and we'll bring you the most optimal trips to hack (and return) on time!
-			</h3><!-- HEADER -->
-		</div>
-		<div>
-			<form>
-			<p>
-				Where are you from? <input type="text" class="buttonstr" name="fromname" value="Barcelona" autocomplete="on"><br>
-				Where do you want to go? <input type="text" class="buttonstr" name="toname" value="HackUPC" autocomplete="on"><br>
-				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
-				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
-				How many friends want to go to this hackathon? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="5"><br>
-				<input type="submit" value="Find">
-			</p>
-			</form> 
-			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
-			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
-			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p> --> <!-- CONVENTIONS --> 
-		</div>
-		<div >
-			<h2 style="font-family:helvetica;">
-				Conventions
-			</h2>
-			<h3 style="font-family:arial;">
-				This is the criterion used to decide on prices and such:
-			</h3>
-			<p >
-				<ul>
-					<li style="font-family:helvetica;">If you go to a hackathon at NA, your currency will be displayed in dollars. For EU, it'll be displayed in euros.</li>
-					<li style="font-family:helvetica;">Hackathons begin some time before their opening cerimony, and end after the ending one. 
-					<br>Public transport and potential delays/baggage check-in are taken into consideration when calculating these times.</li>
-					<li style="font-family:helvetica;">Price will be grouped if you choose to come with (1..5] friends.</li>
-					<li style="font-family:helvetica;">The margin for departures is substracted from the beginning time, and the arrival margin is summed to the ending time.</li>
-					<li style="font-family:helvetica;">All trips are calculated on economy class.</li>
-				</ul>
-			</p><!-- INTERACTIVITY (ALIGN!) -->
-		</div>
-		<div> <!-- LIST -->
-			<h2> List of current hackathons (WIP): </h2>
+    <title>Hacktrip by MNXANL</title>
+  </head>
 
-			<!-- NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aero-hack: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subconjunto para que lo vea la gente! -->
+  <body>
 
-			 <table align="center" style="width:70%">
-				<tr>
-					<th>HACKATHON</th>
-					<th>REGION</th>
-					<th>LOCATION</th>
-					<th>AIRPORT CODE</th> <!-- Quitar este campo -->
-					<th>BEGINS</th>
-					<th>ENDS</th>
-				</tr>
-				<tr>
-					<td>HackUPC</td>
-					<td>EU</td>
-					<td>Barcelona, Spain</td>
-					<td>BCN</td>
-					<td>07/10/2016 - 18:00</td>
-					<td>09/10/2016 - 16:00</td>
-				</tr>
-				<tr>
-					<td>HackRU</td>
-					<td>NA 🇺🇸</td>
-					<td>New Brunswick, NJ</td>
-					<td>EWR</td>
-					<td>22/10/2016 - 10:00</td>
-					<td>23/10/2016 - 16:00</td>
-				</tr>
-				<tr>
-					<td>OxfordHack</td>
-					<td>EU</td>
-					<td>Oxford, UK</td>
-					<td>London (All)</td>
-					<td>19/11/2016 - 09:00</td>
-					<td>20/11/2016 - 17:00</td>
-				</tr>
-				<tr>
-					<td>Junction</td>
-					<td>EU</td>
-					<td>Helsinki, Finland</td>
-					<td>HEL</td>
-					<td>25/11/2016 - 18:00</td>
-					<td>27/11/2016 - 17:00</td>
-				</tr>
-				<tr>
-					<td>Local Hack Day</td>
-					<td>WW</td>
-					<td>Everywhere</td>
-					<td>---</td>
-					<td>3/12/2016 - 00:00</td>
-					<td>4/12/2016 - 00:00</td>
-				</tr>
-				<tr>
-					<td>Junction</td>
-					<td>EU</td>
-					<td>Bucharest, Romania</td>
-					<td>Bucharest (All)</td>
-					<td>8/12/2016 - 19:00</td>
-					<td>10/12/2016 - 17:00</td>
-				</tr>
-			</table> 
-		</div>
-		<div> <!-- TAIL -->
-			<hr>
-			<p>
-				Developed by Aaron Jimenez, Miguel Moreno and Alex Viñas for HackUPC Fall 2016. This website uses Skyscanner's API.
-			</p>
-		</div>
-	</body>
+    <header>
+      <div class="container">
+        <h1>Hacktrip</h1>
+        <h2>Website developed for HackUPC Fall 2016. Developed by Aaron Jimenez, Miguel Moreno and Alex Viñas.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/MNXANL/HackTrip/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/MNXANL/HackTrip/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/MNXANL/HackTrip" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="hacktrip" class="anchor" href="#hacktrip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HackTrip</h1>
+
+<p>Website developed for HackUPC Fall 2016. </p>
+
+<p>The aim of this site is to search for the best planes you can get just before and after any MLH-sanctioned hackathon, as long as its schedule is known.
+For example, if you are from Barcelona and want to go to Junction 2016, you'll get some results for a trip that guarantees you won't miss a thing!</p>
+
+<p>Developed by Aaron Jimenez, Miguel Moreno and Alex Viñas. Using Skyscanner's API.</p>
+      </section>
+    </div>
+
+    
+  </body>
 </html>
