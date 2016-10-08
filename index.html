@@ -21,9 +21,56 @@
 			</h3>
 		</div>
 		<div>
-			<p>Where are you from? [Cajita de Text Edit]</p>
-			<p>Where do you want to go? [Cajita de seleccion que coge datos de la BD]</p>
-			<p>Do you want an extra margin of time (in hours)? [Cajita de Text Edit]</p>
+			<form>
+				Where are you from? <input type="text" name="fromname">
+				Where do you want to go? <input type="text" name="toname"><br>
+				Do you want an extra margin of time (in hours)? <input type="int" name="hourname"><br>
+				<input type="submit" value="Find">
+			</form> 
+			<p>Where are you from? <i>[Cajita de Text Edit]</i></p>
+			<p>Where do you want to go? <i>[Cajita de seleccion que coge datos de la BD/lista de hacks]</i></p>
+			<p>Do you want an extra margin of time (in hours)? <i>[Cajita de Text Edit]</i></p>
+		</div>
+		<div>
+			<h1> List of current hackathons (WIP): </h1>
+				NOTA: Una idea para los BEGIN y END seria considerar el tiempo entre aeropuerto-uni: se resta al tiempo de BEGIN y se suma al de END. Aunque aqui este toda la info, moverla a una BD ajena seria un plus; dejariamos solo un subset para que lo vea la pipol!
+			 <table align="center" style="width:70%">
+				<tr>
+					<th>HACKATHON</th>
+					<th>LOCATION</th>
+					<th>AIRPORT CODE</th>
+					<th>BEGINS</th>
+					<th>ENDS</th>
+				</tr>
+				<tr>
+					<td>HackUPC</td>
+					<td>Barcelona, Spain</td>
+					<td>BCN</td>
+					<td>07/10/2016 - 18:00</td>
+					<td>09/10/2016 - 16:00</td>
+				</tr>
+				<tr>
+					<td>HackRU</td>
+					<td>New Brunswick, NJ</td>
+					<td>EWR</td>
+					<td>22/10/2016 - 10:00</td>
+					<td>23/10/2016 - 16:00</td>
+				</tr>
+				<tr>
+					<td>OxfordHack</td>
+					<td>Oxford, UK</td>
+					<td>London (all)</td>
+					<td>19/11/2016 - 09:00</td>
+					<td>20/11/2016 - 17:00</td>
+				</tr>
+				<tr>
+					<td>Junction</td>
+					<td>Helsinki, Finland</td>
+					<td>HEL</td>
+					<td>25/11/2016 - 18:00</td>
+					<td>27/11/2016 - 17:00</td>
+				</tr>
+			</table> 
 		</div>
 	</body>
 </html>
