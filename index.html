@@ -26,14 +26,11 @@
 			<form id="data">
 			<p>
 				Where are you from? <!--input type="text" class="buttonstr" name="fromname" value="" autocomplete="on"><br-->
-				<select name="toname" >
+				<select name="fromname" >
 				  <option value=""></option>
 				  <option value="BCN">Barcelona</option>
-				  <option value="PAR">Paris</option>
-				  <option value="GER">Bremen</option>
 				  <option value="LON">London</option>
-				  <option value="NYC">New York City</option>
-  				  <option value="SFR">San Francisco</option>	
+				  <option value="TXS">Austin, TX</option>
 				</select>
 				<br>
 
@@ -41,20 +38,22 @@
 				<select name="toname">
 				  <option value=""></option>
 				  <option value="BCN">HackUPC</option>
-				  <option value="EWR">HackRU</option>
+				  <option value="BRE">jacobsHack!</option>
+				  <option value="AUS">HackTX</option>
+				  <option value="BHX">BrumHack</option>
+				  <option value="BHX2">AstonHack</option>
 				  <option value="LHR">Oxford Hack</option>
 				  <option value="HEL">Junction</option>
-				  <option value="---">Local Hack Day</option>
-  				  <option value="ROI">HackSociety</option>	
+				  <option value="Local">Local Hack Day</option>
+  				  <option value="OTP">HackSociety</option>	
 				</select>
 				<br>
-				Do you want an extra margin of time to depart (in hours)? <input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
+				Do you want an extra margin of time to depart (in hours)? 
+				<input type="number" class="buttonum" name="hourname" value="0" min="0" max="10"><br>
 				
-				Do you want an extra margin of time to arrive (in hours)? <input type="number" class="buttonum" name="hourname2" value="0" min="0" max="10"><br>
+				Do you want an extra margin of time to arrive (in hours)? 
+				<input type="number" class="buttonum" name="hourname2" value="0" min="0" max="10"><br>
 				
-				How many people want to go to this hackathon? <input class="buttonum" name="friendsnum" value="1" min="1" max="8" type="number" class="buttonum" name="hourname"><br>  
-				 
-
 				<!--<input type="submit" value="Find" >-->
 				
 				<button onclick="showAlert()">Find </button>
@@ -65,6 +64,88 @@
 					if (document.forms["data"]["fromname"].value == "" || document.forms["data"]["toname"].value == "") {
 						alert("Please complete the text fields");
 					}
+					// Dat hardcode
+					else if (document.forms["data"]["fromname"].value == document.forms["data"]["toname"].value && document.forms["data"]["toname"].value == "") {
+						alert("You don't need to take a plane for this hackathon! ");
+					}
+					else if (document.forms["data"]["fromname"].value == "BCN") { //BARCELONA
+						if (document.forms["data"]["toname"].value == "BCN") { //HackUPC
+						    window.open("Result0");
+						}
+						if (document.forms["data"]["toname"].value == "OTP") { //HackConnect
+						    window.open("Trip11.html");
+						}
+						if (document.forms["data"]["toname"].value == "HEL") { //Junction
+						    window.open("Trip12.html");
+						}
+						if (document.forms["data"]["toname"].value == "AUS") { //HackTX
+						    window.open("Trip13.html");
+						}
+						if (document.forms["data"]["toname"].value == "LHR") { //Ox
+						    window.open("Trip14.html");
+						}
+						if (document.forms["data"]["toname"].value == "BHX") { //Brum
+						    window.open("Trip16.html");
+						}
+						if (document.forms["data"]["toname"].value == "BHX2") { //Aston
+						    window.open("Trip17.html");
+						}
+						if (document.forms["data"]["toname"].value == "Local") { //Local Hack Day
+						    window.open("LocalHackDay.html");
+						}
+				    }
+				    else if (document.forms["data"]["fromname"].value == "LON") { //LONDON
+						if (document.forms["data"]["toname"].value == "BCN") { //HackUPC
+						    window.open("Complete");
+						}
+						if (document.forms["data"]["toname"].value == "OTP") { //HackConnect
+						    window.open("Trip21.html");
+						}
+						if (document.forms["data"]["toname"].value == "HEL") { //Junction
+						    window.open("Trip22.html");
+						}
+						if (document.forms["data"]["toname"].value == "AUS") { //HackNY
+						    window.open("Trip23.html");
+						}
+						if (document.forms["data"]["toname"].value == "LHR") { //Ox
+						    window.open("Result0");
+						}
+						if (document.forms["data"]["toname"].value == "BHX") { //Brum
+						    window.open("Result0");
+						}
+						if (document.forms["data"]["toname"].value == "BHX2") { //Aston
+						    window.open("Result0");
+						}
+						if (document.forms["data"]["toname"].value == "Local") { //Local Hack Day
+						    window.open("LocalHackDay.html");
+						}
+				    }
+				    else if (document.forms["data"]["fromname"].value == "TXS") { //AUSTIN, TX
+						if (document.forms["data"]["toname"].value == "BCN") { //HackUPC
+						    window.open("Complete");
+						}
+						if (document.forms["data"]["toname"].value == "OTP") { //HackConnect
+						    window.open("Trip11.html");
+						}
+						if (document.forms["data"]["toname"].value == "HEL") { //Junction
+						    window.open("Trip12.html");
+						}
+						if (document.forms["data"]["toname"].value == "AUS") { //HackTX
+						    window.open("Result0");
+						}
+						if (document.forms["data"]["toname"].value == "LHR") { //Ox
+						    window.open("Trip14.html");
+						}
+						if (document.forms["data"]["toname"].value == "BHX") { //Brum
+						    window.open("Trip16.html");
+						}
+						if (document.forms["data"]["toname"].value == "BHX2") { //Aston
+						    window.open("Trip17.html");
+						}
+						if (document.forms["data"]["toname"].value == "Local") { //Local Hack Day
+						    window.open("LocalHackDay.html");
+						}
+				    }
 				}
 			</script>
 			<!-- <p>Where are you from? <i>[Cajita de Text Edit]</i></p>
